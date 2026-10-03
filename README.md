@@ -325,7 +325,7 @@ Replace `remote.example.com` with the hostname you set up above. The installer d
 1. When Remote starts for the first time, it prints a one-time setup link to
    the server's log. To see it, connect to the server and run:
    `journalctl -u remote --since "-10 min" | grep -A2 "first-time setup"`.
-   The link looks like `https://remote.example.com/?token=...` and works for
+   The link looks like `https://remote.example.com/?token=....` and works for
    30 minutes. If it has expired or you lost it, run `sudo remote setup-token` on
    the server to print a fresh one. The setup data is root-owned; omit
    `sudo` if you are already root.
